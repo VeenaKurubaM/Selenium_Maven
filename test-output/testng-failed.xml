@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="uname" value="abc@xyz.com"/>
+    <parameter name="pwd" value="Abc@1234"/>
     <classes>
       <class name="testcases.SimplilearnLoginTest">
         <methods>
           <include name="DataClean"/>
+          <include name="Test1_Failed"/>
           <include name="SetUp"/>
           <include name="TearDown"/>
-          <include name="Test1"/>
           <include name="DataSetUp"/>
         </methods>
       </class> <!-- testcases.SimplilearnLoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

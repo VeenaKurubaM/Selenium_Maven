@@ -23,7 +23,7 @@ public class SimplilearnLoginTest extends BaseClass{
 	//eact method heere we treat as test case
 	
 	@Test
-	public void Test1() {
+	public void Test1_Failed() {
 		
 		test.log(LogStatus.INFO, "Test1 Started");
 		//LoginPage lp = new LoginPage(driver);
@@ -40,7 +40,24 @@ public class SimplilearnLoginTest extends BaseClass{
 		Assert.assertEquals(ActError, ExpError);
 			
 	}
-	
+	@Test
+public void Test1_Pass() {
+		
+		test.log(LogStatus.INFO, "Test1 Started");
+		//LoginPage lp = new LoginPage(driver);
+		LoginPage lp=new LoginPage(driver);
+		lp.Login("abc@xyz.com","Abc@1234");
+		
+		//Step6: Validate the error message on screen
+		WebElement Error = driver.findElement(By.id("msg_box"));
+		
+		String ActError = Error.getText();
+		String ExpError = "The email or password you have entered is invalid.";
+		
+		Assert.assertTrue(Error.isDisplayed());
+		Assert.assertEquals(ActError, ExpError);
+			
+	}
 	@Test
 	@Parameters({"uname","pwd"})
 	public void Test2(String UserName, String Password) {
