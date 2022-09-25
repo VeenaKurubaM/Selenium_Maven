@@ -1,6 +1,7 @@
 package testcases;
 
 import java.util.List;
+
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.ss.util.CellReference;
@@ -9,13 +10,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
 import pages.LoginPage;
-
+@Listeners(ListenerExample.class)
 public class SimplilearnLoginTest extends BaseClass{
 	
 	//eact method heere we treat as test case
@@ -32,7 +34,7 @@ public class SimplilearnLoginTest extends BaseClass{
 		WebElement Error = driver.findElement(By.id("msg_box"));
 		
 		String ActError = Error.getText();
-		String ExpError = "The email or password you have entered is invalid.";
+		String ExpError = "The email or password you have entered is invalid";
 		
 		Assert.assertTrue(Error.isDisplayed());
 		Assert.assertEquals(ActError, ExpError);

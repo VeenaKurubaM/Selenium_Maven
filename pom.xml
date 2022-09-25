@@ -53,6 +53,12 @@
         <artifactId>extentreports</artifactId>
         <version>2.41.2</version>
     </dependency>
+    <!-- <suiteXmlFile>screen shots</suiteXmlFile>-->
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.6</version>
+    </dependency>
 
 	</dependencies>
 	<build>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-24T07:29:46Z" name="Suite" finished-at="2022-09-24T07:30:50Z" duration-ms="64027">
+  <suite started-at="2022-09-25T05:05:05Z" name="Default suite" finished-at="2022-09-25T05:05:15Z" duration-ms="10799">
     <groups>
     </groups>
-    <test started-at="2022-09-24T07:29:46Z" name="Test" finished-at="2022-09-24T07:30:50Z" duration-ms="64027">
+    <test started-at="2022-09-25T05:05:05Z" name="Default test" finished-at="2022-09-25T05:05:15Z" duration-ms="10799">
       <class name="testcases.SimplilearnLoginTest">
-        <test-method is-config="true" signature="DataSetUp()[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:29:46Z" name="DataSetUp" finished-at="2022-09-24T07:29:47Z" duration-ms="526" status="PASS">
+        <test-method is-config="true" signature="DataSetUp()[pri:0, instance:testcases.SimplilearnLoginTest@30c8681]" started-at="2022-09-25T05:05:05Z" name="DataSetUp" finished-at="2022-09-25T05:05:05Z" duration-ms="635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataSetUp -->
-        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:29:47Z" name="SetUp" finished-at="2022-09-24T07:29:49Z" duration-ms="2224" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:testcases.SimplilearnLoginTest@30c8681]" started-at="2022-09-25T05:05:05Z" name="SetUp" finished-at="2022-09-25T05:05:08Z" duration-ms="2493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,69 +22,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="Test1()[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:29:49Z" name="Test1" finished-at="2022-09-24T07:29:54Z" duration-ms="4774" status="PASS">
+        <test-method signature="Test1()[pri:0, instance:testcases.SimplilearnLoginTest@30c8681]" started-at="2022-09-25T05:05:08Z" name="Test1" finished-at="2022-09-25T05:05:14Z" duration-ms="6466" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [The email or password you have entered is invalid] but found [The email or password you have entered is invalid.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [The email or password you have entered is invalid] but found [The email or password you have entered is invalid.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at testcases.SimplilearnLoginTest.Test1(SimplilearnLoginTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:29:54Z" name="TearDown" finished-at="2022-09-24T07:29:56Z" duration-ms="2443" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.SimplilearnLoginTest@30c8681]" started-at="2022-09-25T05:05:15Z" name="TearDown" finished-at="2022-09-25T05:05:15Z" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:29:56Z" name="SetUp" finished-at="2022-09-24T07:29:58Z" duration-ms="1712" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.SimplilearnLoginTest.Test2(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="Test2(java.lang.String, java.lang.String)[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:29:58Z" name="Test2" finished-at="2022-09-24T07:30:23Z" duration-ms="25343" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc@xyz.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abc@1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:30:23Z" name="TearDown" finished-at="2022-09-24T07:30:23Z" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:30:23Z" name="SetUp" finished-at="2022-09-24T07:30:26Z" duration-ms="2058" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.SimplilearnLoginTest.Test3()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="Test3()[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:30:26Z" name="Test3" finished-at="2022-09-24T07:30:50Z" duration-ms="24488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:30:50Z" name="TearDown" finished-at="2022-09-24T07:30:50Z" duration-ms="96" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="DataClean()[pri:0, instance:testcases.SimplilearnLoginTest@27adc16e]" started-at="2022-09-24T07:30:50Z" name="DataClean" finished-at="2022-09-24T07:30:50Z" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="DataClean()[pri:0, instance:testcases.SimplilearnLoginTest@30c8681]" started-at="2022-09-25T05:05:15Z" name="DataClean" finished-at="2022-09-25T05:05:15Z" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataClean -->
       </class> <!-- testcases.SimplilearnLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
